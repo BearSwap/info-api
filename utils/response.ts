@@ -8,12 +8,10 @@ export function return200(res: VercelResponse, body: any): VercelResponse {
 export function return500(res: VercelResponse, status: string,): VercelResponse {
   return res.status(500).json({
     status: {
-  "updated_at": 1234567,              // UNIX timestamp
-  "data": {
-    "name": "...",                    // not necessarily included for BEP20 tokens
-    "symbol": "...",                  // not necessarily included for BEP20 tokens
-    "price": "...",                   // price denominated in USD
-    "price_BNB": "...",               // price denominated in BNB
+     name,                    // not necessarily included for BEP20 tokens
+     symbol,                  // not necessarily included for BEP20 tokens
+     price,                   // price denominated in USD
+     price_BNB,               // price denominated in BNB
   }
 }
 
