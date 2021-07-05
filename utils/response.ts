@@ -5,7 +5,7 @@ export function return200(res: VercelResponse, body: any): VercelResponse {
   return res.status(200).json(body);
 }
 
-export function return500(res: VercelResponse, updated_at: string, data: string, name: string, symbol: string, price: string, price_BNB: string): VercelResponse {
+export function return500(res: VercelResponse, status: string,): VercelResponse {
   return res.status(500).json({
     status: {
   "updated_at": 1234567,              // UNIX timestamp
