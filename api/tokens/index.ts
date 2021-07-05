@@ -32,7 +32,7 @@ export default async function (req: VercelRequest, res: VercelResponse): Promise
     }, {});
 
     return200(res, { updated_at: new Date().getTime(), data: tokens });
-  } catch (error) {
-    return500(res, error);
+  } catch (status) {
+    return500(res, status);
   }
 }
