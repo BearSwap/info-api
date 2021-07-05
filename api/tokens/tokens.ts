@@ -26,7 +26,7 @@ export default async function (req: VercelRequest, res: VercelResponse): Promise
         price_BNB: token?.derivedBNB,
       },
     });
-  } catch (error) {
-    return500(res, error);
+  }catch (status) {
+    return500(res, status);
   }
 }
